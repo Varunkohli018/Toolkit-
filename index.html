@@ -40,14 +40,12 @@
     <button onclick="createTextPdf()">Create PDF</button>
   </section>
 
-  <section id="imageToPdfPage" class="hidden">
-    <h2>Select Image Source</h2>
-    <button id="cameraBtn">Use Camera</button>
-    <button id="galleryBtn">Choose from Gallery</button>
-    <button id="fileBtn">Choose File/Document</button>
-    <input type="file" accept="image/*" id="imageInput" multiple style="display: none;" />
-    <br><br>
-    <button onclick="createImagePdf()">Create PDF</button>
+  <section id="imageToPdfPage">
+  <h2>Select Image</h2>
+  <button onclick="document.getElementById('imageInput').click()">Choose Image</button>
+  <input type="file" accept="image/*" id="imageInput" multiple style="display: none;" />
+  <br><br>
+  <button onclick="createImagePdf()">Create PDF</button>
   </section>
 
   <section id="mergePdfPage" class="hidden">
